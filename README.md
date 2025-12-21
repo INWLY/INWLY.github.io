@@ -5,7 +5,7 @@ The source code of INWLY's personal website.
 ### [👉 Click here to enter](http://INWLY.github.io)
 
 ## 🙋‍♂️ About Me
-Hi, I am Wentao Ruan (阮文涛).
+Hi, I am INWLY, my name is Wentao Ruan (阮文涛).
 
 I am currently a member of the  *IIP-HCI Lab  (Anhui University Laboratory of Intelligent Information and Human-Computer Interaction)* at **Anhui University**. My research interests focus on:
 
