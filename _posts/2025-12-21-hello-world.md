@@ -4,7 +4,7 @@ title:      "Hello! Welcome to My Homepage"
 subtitle:   "Hello, I am Wentao Ruan (阮文涛)"
 date:       2025-12-20 08:00:00
 author:     "Wentao Ruan"
-header-img: "img/2025-12-21_background.jpg"
+header-img: "img/post-images/2025-12-21_background.jpg"
 tags:
     - Life
     - Introduction
