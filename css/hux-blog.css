@@ -1089,3 +1089,17 @@ img::-moz-selection {
 .page-fullscreen footer .copyright a:hover {
   color: #ddd;
 }
+/* --- 自定义：强制主页背景图完整显示 --- */
+header.intro-header {
+  /* contain: 缩放图片直到完全放入区域 (会留白) */
+  background-size: contain !important; 
+
+  /* 禁止图片平铺 */
+  background-repeat: no-repeat !important;
+
+  /* 图片居中显示 */
+  background-position: center center !important;
+
+  /* (可选) 设置留白部分的颜色，例如改为黑色 */
+  background-color: #333 !important; 
+}
