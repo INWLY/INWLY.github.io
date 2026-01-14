@@ -39,6 +39,6 @@ If you are interested in my research or projects, please feel free to contact me
 
 * **GitHub**: [INWLY](https://github.com/INWLY)
 
-* **Email**: [2895062858@qq.com](2895062858@qq.com)
+* **Email**: [INWLY@qq.com](INWLY@qq.com)
 
 Thanks for visiting!
