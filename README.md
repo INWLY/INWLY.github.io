@@ -2,7 +2,7 @@
 
 The source code of INWLY's personal website.
 
-### [👉 Click here to enter](http://INWLY.github.io)
+### [Click here to enter](https://INWLY.github.io)
 
 ## 🙋‍♂️ About Me
 Hi, I am INWLY, my name is Wentao Ruan (阮文涛).
@@ -26,4 +26,4 @@ This theme is maintained by myself, but originally based on the open-source comm
 
 ## 📜 License
 
-Code released under the MIT License. See [LICENSE](https://github.com/qiubaiying/qiubaiying.github.io/blob/master/LICENSE) for more details.
+Code released under the MIT License. See [LICENSE](https://github.com/INWLY/INWLY.github.io/blob/master/LICENSE) for more details.

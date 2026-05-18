@@ -1,17 +1,17 @@
 # Site settings
 title: INWLY
-SEOTitle: INWLY | AHU IIP-HCI Lab
+SEOTitle: INWLY | Wentao Ruan
 header-img: img/background_2.jpeg
 email: INWLY@qq.com
-description: "I am INWLY, my name is Wentao Ruan (阮文涛), from the IIP-HCI Lab at Anhui University. This is my personal homepage recording my research and development life."
-keyword: "Wentao Ruan, 阮文涛, INWLY, IIP-HCI, 安徽大学, AHU, 智能信息处理, 人机交互"
+description: "Wentao Ruan (INWLY), a researcher and developer from the IIP-HCI Lab at Anhui University, focusing on ancient character image processing, image restoration, and generative models."
+keyword: "Wentao Ruan, 阮文涛, INWLY, IIP-HCI, Anhui University, AHU, ancient character image processing, image restoration, generative models"
 url: "https://INWLY.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/INWLY" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "Research, build, write, repeat."
 sidebar-avatar: /img/photo.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -57,16 +57,16 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+# disqus_username:
 
 # Gitalk
 gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  enable: false    #是否开启Gitalk评论
+  clientID:                            #生成的clientID
+  clientSecret:    #生成的clientSecret
+  repo: INWLY.github.io    #仓库名称
+  owner: INWLY    #github用户名
+  admin: INWLY
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -74,11 +74,11 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
+ba_track_id:
 
 # Google Analytics
-ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id:             # Format: UA-xxxxxx-xx
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 

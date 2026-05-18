@@ -1,42 +1,77 @@
 ---
 layout: page
-description: "I Never Wanna Lose You"
+description: "Wentao Ruan | IIP-HCI Lab, Anhui University"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+<main class="profile-page">
+    <section class="profile-section profile-intro">
+        <p class="eyebrow">Researcher and developer</p>
+        <h2>Hi, I am Wentao Ruan, also known as INWLY.</h2>
+        <p>
+            I am a member of the IIP-HCI Lab at Anhui University. My work sits between
+            visual computing and practical systems: ancient character image processing,
+            image restoration, generative models, and tools that make research easier to use.
+        </p>
+        <div class="profile-actions">
+            <a class="profile-button primary" href="{{ site.baseurl }}/about/">About me</a>
+            <a class="profile-button" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
         </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+    </section>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+    <section class="profile-section">
+        <div class="section-heading">
+            <p class="eyebrow">Focus</p>
+            <h2>What I am working on</h2>
+        </div>
+        <div class="focus-grid">
+            <article class="focus-item">
+                <span class="focus-kicker">01</span>
+                <h3>Ancient character image processing</h3>
+                <p>Exploring recognition, enhancement, restoration, and generation for historical scripts and character images.</p>
+            </article>
+            <article class="focus-item">
+                <span class="focus-kicker">02</span>
+                <h3>Image restoration</h3>
+                <p>Building cleaner visual representations from degraded, noisy, incomplete, or low-quality image data.</p>
+            </article>
+            <article class="focus-item">
+                <span class="focus-kicker">03</span>
+                <h3>Generative models</h3>
+                <p>Studying how generation methods can support character synthesis, repair, and visual understanding.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="profile-section profile-band">
+        <div>
+            <p class="eyebrow">Build log</p>
+            <h2>Research notes, code notes, and small experiments.</h2>
+        </div>
+        <p>
+            This site is becoming a home for things I learn while moving between papers,
+            datasets, code, and product-like prototypes.
+        </p>
+    </section>
+
+    <section class="profile-section">
+        <div class="section-heading">
+            <p class="eyebrow">Recent writing</p>
+            <h2>Latest notes</h2>
+        </div>
+        <div class="note-list">
+            {% for post in site.posts limit:3 %}
+            <article class="note-item">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <h3>{{ post.title }}</h3>
+                    {% if post.subtitle %}
+                    <p>{{ post.subtitle }}</p>
+                    {% else %}
+                    <p>{{ post.content | strip_html | truncate:160 }}</p>
+                    {% endif %}
+                </a>
+                <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+</main>
