@@ -78,6 +78,61 @@ body {
     background: #fff;
 }
 
+.compact-page-header,
+.compact-post-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 52px 0 34px;
+}
+
+.compact-page-header h1,
+.compact-post-header h1 {
+    color: #111827;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.compact-page-header .page-description,
+.compact-post-header .subheading,
+.compact-post-header .meta {
+    color: #4b5563;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 12px 0 0;
+}
+
+.compact-post-header .meta {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.compact-post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.compact-post-tags a {
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    color: #0f766e;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+.compact-post-tags a:hover,
+.compact-post-tags a:focus {
+    background: #f0fdfa;
+    border-color: #0f766e;
+    color: #0f766e;
+    text-decoration: none;
+}
+
 .profile-page,
 .about-page {
     color: #1f2937;
@@ -278,6 +333,16 @@ body {
 
     .intro-header .site-heading {
         padding: 140px 0 88px;
+    }
+
+    .compact-page-header,
+    .compact-post-header {
+        padding: 36px 0 26px;
+    }
+
+    .compact-page-header h1,
+    .compact-post-header h1 {
+        font-size: 30px;
     }
 
     .profile-intro h2 {
