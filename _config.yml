@@ -12,7 +12,7 @@ github_repo: "https://github.com/INWLY" # you code repository
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Research, build, write, repeat."
-sidebar-avatar: /img/photo.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://github.com/INWLY.png?size=160      # use GitHub avatar so profile image stays in sync
 
 
 
