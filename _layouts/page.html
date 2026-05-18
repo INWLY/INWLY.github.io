@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% unless page.hide-header %}
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
@@ -16,6 +17,7 @@ layout: default
         </div>
     </div>
 </header>
+{% endunless %}
 
 <!-- Main Content -->
 <div class="container">
