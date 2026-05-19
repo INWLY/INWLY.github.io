@@ -2,20 +2,47 @@
 layout: page
 description: "Wentao Ruan | IIP-HCI Lab, Anhui University"
 hide-header: true
+hide-sidebar-profile: true
 ---
 
 <main class="profile-page">
-    <section class="profile-section profile-intro">
-        <p class="eyebrow">Researcher and developer</p>
-        <h2>Hi, I am Wentao Ruan, also known as INWLY.</h2>
-        <p>
-            I am a member of the IIP-HCI Lab at Anhui University. My work sits between
-            visual computing and practical systems: ancient character image processing,
-            image restoration, generative models, and tools that make research easier to use.
-        </p>
-        <div class="profile-actions">
-            <a class="profile-button primary" href="{{ site.baseurl }}/about/">About me</a>
-            <a class="profile-button" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+    <section class="profile-section profile-hero">
+        <div class="profile-hero-copy">
+            <p class="eyebrow">Researcher and developer</p>
+            <h2>Hi, I am Wentao Ruan, also known as INWLY.</h2>
+            <p>
+                I am a member of the IIP-HCI Lab at Anhui University. My work sits between
+                visual computing and practical systems: ancient character image processing,
+                image restoration, generative models, and tools that make research easier to use.
+            </p>
+            <div class="profile-actions">
+                <a class="profile-button primary" href="{{ site.baseurl }}/about/">About me</a>
+                <a class="profile-button" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+            <img class="profile-portrait" src="{{ site.sidebar-avatar }}" alt="Wentao Ruan">
+            <div>
+                <h3>Wentao Ruan</h3>
+                <p>IIP-HCI Lab, Anhui University</p>
+            </div>
+            <div class="profile-links">
+                <a href="mailto:{{ site.email }}">Email</a>
+                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </aside>
+    </section>
+
+    <section class="profile-section profile-snapshot">
+        <div>
+            <p class="eyebrow">Snapshot</p>
+            <h2>Computer vision for historical characters and restoration systems.</h2>
+        </div>
+        <div class="snapshot-list">
+            <span>Ancient Characters</span>
+            <span>Image Restoration</span>
+            <span>Generative Models</span>
+            <span>Research Tools</span>
         </div>
     </section>
 

@@ -134,7 +134,8 @@ body {
 }
 
 .profile-page,
-.about-page {
+.about-page,
+.tags-page {
     color: #1f2937;
     font-size: 17px;
     line-height: 1.75;
@@ -142,7 +143,9 @@ body {
 
 .profile-page h2,
 .profile-page h3,
-.about-page h2 {
+.about-page h2,
+.tags-page h2,
+.tags-page h3 {
     letter-spacing: 0;
 }
 
@@ -154,17 +157,105 @@ body {
     border-top: 1px solid #e5e7eb;
 }
 
-.profile-intro h2 {
+.profile-hero {
+    align-items: center;
+    display: grid;
+    gap: 34px;
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.42fr);
+    padding-top: 54px;
+}
+
+.profile-hero h2 {
     color: #111827;
     font-size: 34px;
     line-height: 1.25;
     margin: 0 0 18px;
 }
 
-.profile-intro p {
+.profile-hero p {
     color: #4b5563;
     font-size: 18px;
     margin-bottom: 22px;
+}
+
+.profile-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.profile-portrait {
+    aspect-ratio: 1;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 16px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.profile-card h3 {
+    color: #111827;
+    font-size: 20px;
+    margin: 0 0 4px;
+}
+
+.profile-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.profile-links {
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 14px;
+}
+
+.profile-links a {
+    color: #0f766e;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.profile-links a:hover,
+.profile-links a:focus {
+    color: #115e59;
+    text-decoration: none;
+}
+
+.profile-snapshot {
+    align-items: start;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: minmax(0, 0.9fr) minmax(220px, 1fr);
+}
+
+.profile-snapshot h2 {
+    color: #111827;
+    font-size: 24px;
+    line-height: 1.35;
+    margin: 0;
+}
+
+.snapshot-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.snapshot-list span {
+    background: #f8fafc;
+    border: 1px solid #dbe3ea;
+    border-radius: 999px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 11px;
 }
 
 .eyebrow {
@@ -233,6 +324,18 @@ body {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 22px;
+}
+
+.focus-item {
+    border-top: 4px solid #0f766e;
+}
+
+.focus-item:nth-child(2) {
+    border-top-color: #b45309;
+}
+
+.focus-item:nth-child(3) {
+    border-top-color: #475569;
 }
 
 .focus-kicker {
@@ -319,7 +422,73 @@ body {
     color: #0f766e;
 }
 
+.tags-page {
+    padding-top: 34px;
+}
+
+.tags-page #tag_cloud {
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 34px;
+    padding: 18px;
+}
+
+.tags-page #tag_cloud a {
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    padding: 9px 12px;
+    text-decoration: none;
+}
+
+.tags-page #tag_cloud a:hover,
+.tags-page #tag_cloud a:focus {
+    background: #f0fdfa;
+    border-color: #0f766e;
+    color: #0f766e;
+}
+
+.tags-page .listing-seperator {
+    color: #111827;
+    display: block;
+    font-size: 22px !important;
+    margin: 30px 0 12px;
+}
+
+.tags-page .post-preview {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 18px;
+}
+
+.tags-page .post-preview > a > .post-title {
+    font-size: 18px;
+    margin: 0 0 6px;
+}
+
+.tags-page .post-preview > a > .post-subtitle {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.tags-page hr {
+    display: none;
+}
+
 @media (max-width: 991px) {
+    .profile-hero,
+    .profile-snapshot,
     .focus-grid,
     .profile-band {
         grid-template-columns: 1fr;
@@ -345,11 +514,15 @@ body {
         font-size: 30px;
     }
 
-    .profile-intro h2 {
+    .profile-hero {
+        padding-top: 34px;
+    }
+
+    .profile-hero h2 {
         font-size: 28px;
     }
 
-    .profile-intro p {
+    .profile-hero p {
         font-size: 16px;
     }
 
