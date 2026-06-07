@@ -6,45 +6,32 @@ hide-header: true
 
 <main class="profile-page">
     <section class="profile-section profile-intro">
-        <p class="eyebrow">Researcher and developer</p>
-        <h2>Hi, I am Wentao Ruan, also known as INWLY.</h2>
-        <p>
-            I am a member of the IIP-HCI Lab at Anhui University. My work sits between
-            visual computing and practical systems: ancient character image processing,
-            image restoration, generative models, and tools that make research easier to use.
-        </p>
-        <div class="profile-meta">
-            <span>Anhui University</span>
-            <span>IIP-HCI Lab</span>
-            <span>Computer Vision</span>
+        <div class="intro-copy">
+            <p class="eyebrow">Researcher and developer</p>
+            <h2>Hi, I am Wentao Ruan, also known as INWLY.</h2>
+            <p>
+                I am a member of the IIP-HCI Lab at Anhui University. My work sits between
+                visual computing and practical systems: ancient character image processing,
+                image restoration, generative models, and tools that make research easier to use.
+            </p>
+            <div class="profile-meta">
+                <span>Anhui University</span>
+                <span>IIP-HCI Lab</span>
+                <span>Computer Vision</span>
+            </div>
+            <div class="profile-actions">
+                <a class="profile-button primary" href="{{ site.baseurl }}/about/">About me</a>
+                <a class="profile-button" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+            </div>
         </div>
-        <div class="profile-actions">
-            <a class="profile-button primary" href="{{ site.baseurl }}/about/">About me</a>
-            <a class="profile-button" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
-        </div>
-    </section>
-
-    <section class="profile-section">
-        <div class="section-heading">
-            <p class="eyebrow">Focus</p>
-            <h2>What I am working on</h2>
-        </div>
-        <div class="focus-grid">
-            <article class="focus-item">
-                <span class="focus-kicker">01</span>
-                <h3>Ancient character image processing</h3>
-                <p>Exploring recognition, enhancement, restoration, and generation for historical scripts and character images.</p>
-            </article>
-            <article class="focus-item">
-                <span class="focus-kicker">02</span>
-                <h3>Image restoration</h3>
-                <p>Building cleaner visual representations from degraded, noisy, incomplete, or low-quality image data.</p>
-            </article>
-            <article class="focus-item">
-                <span class="focus-kicker">03</span>
-                <h3>Generative models</h3>
-                <p>Studying how generation methods can support character synthesis, repair, and visual understanding.</p>
-            </article>
+        <div class="intro-visual" aria-hidden="true">
+            <div class="glyph-grid">
+                <span></span><span></span><span class="muted"></span><span class="repair"></span>
+                <span></span><span class="muted"></span><span class="repair"></span><span></span>
+                <span class="muted"></span><span class="repair"></span><span></span><span></span>
+                <span class="repair"></span><span></span><span class="muted"></span><span></span>
+            </div>
+            <p>character restoration</p>
         </div>
     </section>
 
@@ -80,6 +67,30 @@ hide-header: true
                     <h3>Character generation systems</h3>
                     <p>Building experiments around generative models for character synthesis, repair, and visual exploration.</p>
                 </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="profile-section">
+        <div class="section-heading">
+            <p class="eyebrow">Focus</p>
+            <h2>What I am working on</h2>
+        </div>
+        <div class="focus-grid">
+            <article class="focus-item">
+                <span class="focus-kicker">01</span>
+                <h3>Ancient character image processing</h3>
+                <p>Exploring recognition, enhancement, restoration, and generation for historical scripts and character images.</p>
+            </article>
+            <article class="focus-item">
+                <span class="focus-kicker">02</span>
+                <h3>Image restoration</h3>
+                <p>Building cleaner visual representations from degraded, noisy, incomplete, or low-quality image data.</p>
+            </article>
+            <article class="focus-item">
+                <span class="focus-kicker">03</span>
+                <h3>Generative models</h3>
+                <p>Studying how generation methods can support character synthesis, repair, and visual understanding.</p>
             </article>
         </div>
     </section>
