@@ -276,9 +276,13 @@ body {
 .profile-intro {
     align-items: center;
     display: grid;
-    gap: 34px;
-    grid-template-columns: minmax(0, 1fr) 190px;
+    gap: 48px;
+    grid-template-columns: minmax(0, 1fr) 220px;
     padding: 46px 0 40px;
+}
+
+.intro-copy {
+    max-width: 760px;
 }
 
 .profile-intro h2 {
@@ -324,7 +328,7 @@ body {
     display: block;
     margin: 0 auto 18px;
     object-fit: cover;
-    width: 148px;
+    width: 162px;
 }
 
 .intro-profile h3 {

@@ -31,7 +31,18 @@ layout: default
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
-        {% if site.sidebar == false %}
+        {% if page.hide-sidebar %}
+<!-- PAGE WITHOUT SIDEBAR -->
+            <div class="
+                col-lg-10 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+                {{ content }}
+            </div>
+        {% elsif site.sidebar == false %}
 <!-- NO SIDEBAR -->
     <!-- PostList Container -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
