@@ -1,52 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="INWLY">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Character restoration grid">
     <rect x="4" y="4" width="56" height="56" rx="12" fill="#0f766e"/>
-    <rect x="9.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="12.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="15.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="12.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="12.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="12.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="9.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="12.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="15.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="18.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="24.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="18.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="21.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="24.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="18.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="21.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="24.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="18.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="21.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="24.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="18.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="24.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="27.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="33.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="27.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="33.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="27.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="33.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="27.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="30.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="33.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="27.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="33.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="36.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="36.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="36.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="36.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="36.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="39.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="42.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="45.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="51.64" y="24.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="45.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="51.64" y="27.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="45.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="48.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="51.64" y="30.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="48.64" y="33.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
-    <rect x="48.64" y="36.64" width="2.72" height="2.72" rx="0.35" fill="#fff"/>
+    <rect x="10" y="10" width="44" height="44" rx="7" fill="none" stroke="#d9fff8" stroke-width="2"/>
+    <path d="M45 18 L18 45" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <rect x="10.95" y="10.95" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
+    <rect x="22.35" y="10.95" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
+    <rect x="45.15" y="10.95" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
+    <rect x="10.95" y="22.35" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
+    <rect x="33.75" y="22.35" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
+    <rect x="45.15" y="22.35" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
+    <rect x="22.35" y="33.75" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
+    <rect x="33.75" y="33.75" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
+    <rect x="10.95" y="45.15" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
+    <rect x="33.75" y="45.15" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
+    <rect x="45.15" y="45.15" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
 </svg>
