@@ -1,16 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Character restoration grid">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Abstract character restoration mark">
     <rect x="4" y="4" width="56" height="56" rx="12" fill="#0f766e"/>
-    <rect x="10" y="10" width="44" height="44" rx="7" fill="none" stroke="#d9fff8" stroke-width="2"/>
-    <path d="M45 18 L18 45" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
-    <rect x="10.95" y="10.95" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
-    <rect x="22.35" y="10.95" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
-    <rect x="45.15" y="10.95" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
-    <rect x="10.95" y="22.35" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
-    <rect x="33.75" y="22.35" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
-    <rect x="45.15" y="22.35" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
-    <rect x="22.35" y="33.75" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
-    <rect x="33.75" y="33.75" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
-    <rect x="10.95" y="45.15" width="7.9" height="7.9" rx="1.4" fill="#f59e0b"/>
-    <rect x="33.75" y="45.15" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
-    <rect x="45.15" y="45.15" width="7.9" height="7.9" rx="1.4" fill="#f0fdfa"/>
+    <path d="M15 14 V49 M15 14 H45 M45 14 V27 M15 31 H45 M30 14 V49 M15 49 H45 M45 31 L53 40" fill="none" stroke="#f0fdfa" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M45 27 L51 20 M51 20 V37" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="51" cy="20" r="2.6" fill="#f59e0b"/>
 </svg>
