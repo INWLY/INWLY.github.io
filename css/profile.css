@@ -78,6 +78,10 @@ body {
     background: #fff;
 }
 
+.navbar-custom {
+    animation: navDropIn 520ms ease both;
+}
+
 .sidebar-container {
     color: #64748b;
 }
@@ -183,12 +187,48 @@ body {
 @keyframes profileFadeUp {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(18px);
     }
 
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes navDropIn {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes visualRise {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes glyphPop {
+    from {
+        opacity: 0;
+        transform: scale(0.45);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -209,24 +249,24 @@ body {
 }
 
 .profile-section {
-    animation: profileFadeUp 520ms ease both;
+    animation: profileFadeUp 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
     padding: 36px 0;
 }
 
 .profile-section:nth-of-type(2) {
-    animation-delay: 80ms;
-}
-
-.profile-section:nth-of-type(3) {
     animation-delay: 140ms;
 }
 
+.profile-section:nth-of-type(3) {
+    animation-delay: 220ms;
+}
+
 .profile-section:nth-of-type(4) {
-    animation-delay: 200ms;
+    animation-delay: 300ms;
 }
 
 .profile-section:nth-of-type(5) {
-    animation-delay: 260ms;
+    animation-delay: 380ms;
 }
 
 .profile-section + .profile-section {
@@ -277,6 +317,7 @@ body {
 }
 
 .intro-visual {
+    animation: visualRise 760ms cubic-bezier(0.22, 1, 0.36, 1) 160ms both;
     background: #0f766e;
     border-radius: 8px;
     box-shadow: 0 18px 38px rgba(15, 118, 110, 0.22);
@@ -291,9 +332,74 @@ body {
 }
 
 .glyph-grid span {
+    animation: glyphPop 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
     aspect-ratio: 1;
     background: #f0fdfa;
     border-radius: 5px;
+}
+
+.glyph-grid span:nth-child(1) {
+    animation-delay: 260ms;
+}
+
+.glyph-grid span:nth-child(2) {
+    animation-delay: 300ms;
+}
+
+.glyph-grid span:nth-child(3) {
+    animation-delay: 340ms;
+}
+
+.glyph-grid span:nth-child(4) {
+    animation-delay: 380ms;
+}
+
+.glyph-grid span:nth-child(5) {
+    animation-delay: 420ms;
+}
+
+.glyph-grid span:nth-child(6) {
+    animation-delay: 460ms;
+}
+
+.glyph-grid span:nth-child(7) {
+    animation-delay: 500ms;
+}
+
+.glyph-grid span:nth-child(8) {
+    animation-delay: 540ms;
+}
+
+.glyph-grid span:nth-child(9) {
+    animation-delay: 580ms;
+}
+
+.glyph-grid span:nth-child(10) {
+    animation-delay: 620ms;
+}
+
+.glyph-grid span:nth-child(11) {
+    animation-delay: 660ms;
+}
+
+.glyph-grid span:nth-child(12) {
+    animation-delay: 700ms;
+}
+
+.glyph-grid span:nth-child(13) {
+    animation-delay: 740ms;
+}
+
+.glyph-grid span:nth-child(14) {
+    animation-delay: 780ms;
+}
+
+.glyph-grid span:nth-child(15) {
+    animation-delay: 820ms;
+}
+
+.glyph-grid span:nth-child(16) {
+    animation-delay: 860ms;
 }
 
 .glyph-grid .muted {
@@ -461,12 +567,25 @@ body {
 
 .work-item {
     align-items: stretch;
+    animation: profileFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     display: grid;
     grid-template-columns: 178px minmax(0, 1fr);
     overflow: hidden;
     transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.work-item:nth-child(1) {
+    animation-delay: 260ms;
+}
+
+.work-item:nth-child(2) {
+    animation-delay: 340ms;
+}
+
+.work-item:nth-child(3) {
+    animation-delay: 420ms;
 }
 
 .work-item:hover {
@@ -707,7 +826,10 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
     .profile-section,
+    .navbar-custom,
     .sidebar-container section,
+    .glyph-grid span,
+    .intro-visual,
     .profile-button,
     .focus-item,
     .note-item,
