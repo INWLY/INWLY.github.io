@@ -314,12 +314,8 @@ body {
 
 .intro-visual {
     animation: visualRise 760ms cubic-bezier(0.22, 1, 0.36, 1) 160ms both;
-    background: #fff;
-    border: 1px solid #dbe3ea;
-    border-radius: 8px;
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
     color: #0f766e;
-    padding: 18px;
+    padding: 4px;
 }
 
 .glyph-grid {
