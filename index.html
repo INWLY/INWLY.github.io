@@ -2,6 +2,7 @@
 layout: page
 description: "Wentao Ruan | IIP-HCI Lab, Anhui University"
 hide-header: true
+hide-sidebar-profile: true
 ---
 
 <main class="profile-page">
@@ -24,15 +25,17 @@ hide-header: true
                 <a class="profile-button" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
-        <div class="intro-visual" aria-hidden="true">
-            <div class="glyph-grid">
-                <span></span><span></span><span class="muted"></span><span class="repair"></span>
-                <span></span><span class="muted"></span><span class="repair"></span><span></span>
-                <span class="muted"></span><span class="repair"></span><span></span><span></span>
-                <span class="repair"></span><span></span><span class="muted"></span><span></span>
+        <aside class="intro-profile" aria-label="Profile summary">
+            <img src="{{ site.sidebar-avatar }}" alt="Wentao Ruan">
+            <div class="intro-profile-copy">
+                <h3>Wentao Ruan</h3>
+                <p>IIP-HCI Lab<br>Anhui University</p>
             </div>
-            <p>character restoration</p>
-        </div>
+            <div class="intro-profile-links">
+                <a href="mailto:{{ site.email }}">Email</a>
+                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </aside>
     </section>
 
     <section class="profile-section">
