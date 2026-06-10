@@ -19,30 +19,47 @@ profile-motion: true
                 <p>Wentao Ruan</p>
                 <span>IIP-HCI Lab, Anhui University</span>
             </div>
+            <div class="profile-contact-list reveal-item" aria-label="Contact links">
+                <button class="profile-contact copy-contact" type="button" data-copy="{{ site.email }}" aria-label="Copy email address">
+                    <span class="contact-mark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M4.75 6.75h14.5v10.5H4.75z"></path>
+                            <path d="m5.5 7.5 6.5 5.25L18.5 7.5"></path>
+                        </svg>
+                    </span>
+                    <span class="contact-label">Email</span>
+                    <strong>{{ site.email }}</strong>
+                    <em>Copy</em>
+                </button>
+                <button class="profile-contact copy-contact" type="button" data-copy="{{ site.wechat_username }}" aria-label="Copy WeChat ID">
+                    <span class="contact-mark" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M10.25 7.25c-3.45 0-6.25 2.18-6.25 4.88 0 1.47.84 2.79 2.16 3.68l-.44 1.74 2.03-.98c.75.28 1.59.44 2.5.44 3.45 0 6.25-2.18 6.25-4.88s-2.8-4.88-6.25-4.88Z"></path>
+                            <path d="M14.8 10.35c2.89.28 5.2 2.15 5.2 4.44 0 1.25-.68 2.38-1.78 3.17l.36 1.42-1.69-.82c-.64.22-1.35.34-2.09.34-1.84 0-3.46-.72-4.43-1.82"></path>
+                        </svg>
+                    </span>
+                    <span class="contact-label">WeChat</span>
+                    <strong>{{ site.wechat_username }}</strong>
+                    <em>Copy</em>
+                </button>
+                <a class="profile-contact" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="Open GitHub profile">
+                    <span class="contact-mark contact-mark-github" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M12 3.75a8.25 8.25 0 0 0-2.61 16.08c.41.08.56-.18.56-.4v-1.4c-2.28.5-2.76-1.1-2.76-1.1-.37-.94-.91-1.19-.91-1.19-.75-.51.06-.5.06-.5.82.06 1.25.85 1.25.85.74 1.25 1.92.89 2.39.68.07-.53.29-.89.52-1.1-1.82-.21-3.73-.91-3.73-4.04 0-.89.32-1.62.84-2.2-.08-.2-.36-1.04.08-2.16 0 0 .68-.22 2.25.84A7.73 7.73 0 0 1 12 6.33c.7 0 1.39.09 2.05.28 1.56-1.06 2.24-.84 2.24-.84.45 1.12.17 1.96.08 2.16.52.58.84 1.31.84 2.2 0 3.14-1.92 3.83-3.75 4.03.3.26.56.76.56 1.53v2.27c0 .22.15.48.57.4A8.25 8.25 0 0 0 12 3.75Z"></path>
+                        </svg>
+                    </span>
+                    <span class="contact-label">GitHub</span>
+                    <strong>github.com/{{ site.github_username }}</strong>
+                    <em>Open</em>
+                </a>
+            </div>
+            <p class="profile-copy-status" aria-live="polite"></p>
             <nav class="profile-nav reveal-item" aria-label="Homepage sections">
                 <a href="#about">About</a>
                 <a href="#directions">Directions</a>
                 <a href="#notes">Notes</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <div class="profile-contact-list reveal-item" aria-label="Contact links">
-                <button class="profile-contact copy-contact" type="button" data-copy="{{ site.email }}" aria-label="Copy email address">
-                    <span>Email</span>
-                    <strong>{{ site.email }}</strong>
-                    <em>Copy</em>
-                </button>
-                <button class="profile-contact copy-contact" type="button" data-copy="{{ site.wechat_username }}" aria-label="Copy WeChat ID">
-                    <span>WeChat</span>
-                    <strong>{{ site.wechat_username }}</strong>
-                    <em>Copy</em>
-                </button>
-                <a class="profile-contact" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="Open GitHub profile">
-                    <span>GitHub</span>
-                    <strong>github.com/{{ site.github_username }}</strong>
-                    <em>Open</em>
-                </a>
-            </div>
-            <p class="profile-copy-status" aria-live="polite"></p>
         </div>
     </aside>
 
