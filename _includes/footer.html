@@ -114,6 +114,11 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
 
+{% if page.profile-motion %}
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="{{ "/js/profile-motion.js?v=20260611-1" | prepend: site.baseurl }}"></script>
+{% endif %}
+
 <!-- Service Worker -->
 {% if site.service-worker %}
 <script type="text/javascript">
@@ -267,4 +272,3 @@
     });
 </script>
 {% endif %}
-

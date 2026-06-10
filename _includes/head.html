@@ -25,9 +25,16 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
 
+    {% if page.profile-motion %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('profile-js');</script>
+    {% endif %}
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/profile.css?v=20260610-3" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/profile.css?v=20260611-1" | prepend: site.baseurl }}">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">

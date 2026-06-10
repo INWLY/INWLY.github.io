@@ -4,124 +4,160 @@ description: "Wentao Ruan | IIP-HCI Lab, Anhui University"
 hide-header: true
 hide-sidebar: true
 hide-sidebar-profile: true
+profile-motion: true
 ---
 
-<main class="profile-page">
-    <section class="profile-section profile-intro">
-        <div class="intro-copy">
-            <p class="eyebrow">Researcher and developer</p>
-            <h2>Hi, I am Wentao Ruan, also known as INWLY.</h2>
-            <p>
-                I am a member of the IIP-HCI Lab at Anhui University. My work sits between
-                visual computing and practical systems: ancient character image processing,
-                image restoration, generative models, and tools that make research easier to use.
-            </p>
-            <div class="profile-meta">
-                <span>Anhui University</span>
-                <span>IIP-HCI Lab</span>
-                <span>Computer Vision</span>
+<main class="profile-page profile-shell" data-profile-motion>
+    <aside class="profile-rail" aria-label="Profile summary">
+        <div class="profile-rail-inner">
+            <a class="profile-avatar-link reveal-item" href="{{ site.baseurl }}/about/" aria-label="About Wentao Ruan">
+                <img src="{{ site.sidebar-avatar }}" alt="Wentao Ruan" class="profile-avatar">
+            </a>
+            <div class="profile-identity reveal-item">
+                <p class="profile-kicker">Researcher and developer</p>
+                <h1>INWLY</h1>
+                <p>Wentao Ruan</p>
+                <span>IIP-HCI Lab, Anhui University</span>
             </div>
-            <div class="profile-actions">
-                <a class="profile-button primary" href="{{ site.baseurl }}/about/">About me</a>
-                <a class="profile-button" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </div>
-        <aside class="intro-profile" aria-label="Profile summary">
-            <div class="intro-avatar-wrap">
-                <img src="{{ site.sidebar-avatar }}" alt="Wentao Ruan">
-            </div>
-            <div class="intro-profile-copy">
-                <h3>Wentao Ruan</h3>
-                <p>IIP-HCI Lab, Anhui University</p>
-            </div>
-            <div class="intro-profile-links">
-                <a href="mailto:{{ site.email }}">Email</a>
-                <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </aside>
-    </section>
-
-    <section class="profile-section">
-        <div class="section-heading split-heading">
-            <div>
-                <p class="eyebrow">Current directions</p>
-                <h2>Research interests and experiments</h2>
-            </div>
-            <a class="section-link" href="{{ site.baseurl }}/tags/">Browse notes</a>
-        </div>
-        <div class="work-list">
-            <article class="work-item">
-                <span class="work-index">01</span>
-                <div class="work-content">
-                    <span class="work-tag">Ancient characters</span>
-                    <h3>Character image understanding</h3>
-                    <p>Exploring recognition, enhancement, restoration, and visual analysis workflows for historical scripts and character images.</p>
-                    <div class="work-meta">
-                        <span>Recognition</span>
-                        <span>Restoration</span>
-                        <span>Historical scripts</span>
-                    </div>
-                </div>
-            </article>
-            <article class="work-item">
-                <span class="work-index">02</span>
-                <div class="work-content">
-                    <span class="work-tag">Restoration</span>
-                    <h3>Degraded image repair</h3>
-                    <p>Building cleaner visual representations from degraded, noisy, incomplete, or low-quality image data.</p>
-                    <div class="work-meta">
-                        <span>Enhancement</span>
-                        <span>Repair</span>
-                        <span>Low-quality data</span>
-                    </div>
-                </div>
-            </article>
-            <article class="work-item">
-                <span class="work-index">03</span>
-                <div class="work-content">
-                    <span class="work-tag">Generation</span>
-                    <h3>Character generation systems</h3>
-                    <p>Studying how generation methods can support character synthesis, repair, and visual understanding.</p>
-                    <div class="work-meta">
-                        <span>Generative models</span>
-                        <span>Synthesis</span>
-                        <span>Visual understanding</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="profile-section profile-band">
-        <div>
-            <p class="eyebrow">Build log</p>
-            <h2>Research notes, code notes, and small experiments.</h2>
-        </div>
-        <p>
-            This site is becoming a home for things I learn while moving between papers,
-            datasets, code, and product-like prototypes.
-        </p>
-    </section>
-
-    <section class="profile-section">
-        <div class="section-heading">
-            <p class="eyebrow">Recent writing</p>
-            <h2>Latest notes</h2>
-        </div>
-        <div class="note-list">
-            {% for post in site.posts limit:3 %}
-            <article class="note-item">
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <h3>{{ post.title }}</h3>
-                    {% if post.subtitle %}
-                    <p>{{ post.subtitle }}</p>
-                    {% else %}
-                    <p>{{ post.content | strip_html | truncate:160 }}</p>
-                    {% endif %}
+            <nav class="profile-nav reveal-item" aria-label="Homepage sections">
+                <a href="#about">About</a>
+                <a href="#directions">Directions</a>
+                <a href="#notes">Notes</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="profile-contact-list reveal-item" aria-label="Contact links">
+                <button class="profile-contact copy-contact" type="button" data-copy="{{ site.email }}" aria-label="Copy email address">
+                    <span>Email</span>
+                    <strong>{{ site.email }}</strong>
+                    <em>Copy</em>
+                </button>
+                <button class="profile-contact copy-contact" type="button" data-copy="{{ site.wechat_username }}" aria-label="Copy WeChat ID">
+                    <span>WeChat</span>
+                    <strong>{{ site.wechat_username }}</strong>
+                    <em>Copy</em>
+                </button>
+                <a class="profile-contact" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="Open GitHub profile">
+                    <span>GitHub</span>
+                    <strong>github.com/{{ site.github_username }}</strong>
+                    <em>Open</em>
                 </a>
-                <time>{{ post.date | date: "%B %-d, %Y" }}</time>
-            </article>
-            {% endfor %}
+            </div>
+            <p class="profile-copy-status" aria-live="polite"></p>
         </div>
-    </section>
+    </aside>
+
+    <div class="profile-content">
+        <section class="profile-section profile-about" id="about">
+            <div>
+                <p class="eyebrow reveal-item">About</p>
+                <h2 class="line-reveal">Hi, I am Wentao Ruan, also known as INWLY.</h2>
+            </div>
+            <div class="about-copy">
+                <p class="line-reveal">
+                    I am a member of the IIP-HCI Lab at Anhui University. My work sits between
+                    visual computing and practical systems: ancient character image processing,
+                    image restoration, generative models, and tools that make research easier to use.
+                </p>
+                <div class="profile-meta reveal-item">
+                    <span>Anhui University</span>
+                    <span>IIP-HCI Lab</span>
+                    <span>Computer Vision</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section" id="directions">
+            <div class="section-heading split-heading">
+                <div>
+                    <p class="eyebrow reveal-item">Current directions</p>
+                    <h2 class="line-reveal">Research interests and experiments</h2>
+                </div>
+                <a class="section-link reveal-item" href="{{ site.baseurl }}/tags/">Browse notes</a>
+            </div>
+            <div class="work-list">
+                <article class="work-item reveal-item">
+                    <span class="work-index">01</span>
+                    <div class="work-content">
+                        <span class="work-tag">Ancient characters</span>
+                        <h3>Character image understanding</h3>
+                        <p>Exploring recognition, enhancement, restoration, and visual analysis workflows for historical scripts and character images.</p>
+                        <div class="work-meta">
+                            <span>Recognition</span>
+                            <span>Restoration</span>
+                            <span>Historical scripts</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-item reveal-item">
+                    <span class="work-index">02</span>
+                    <div class="work-content">
+                        <span class="work-tag">Restoration</span>
+                        <h3>Degraded image repair</h3>
+                        <p>Building cleaner visual representations from degraded, noisy, incomplete, or low-quality image data.</p>
+                        <div class="work-meta">
+                            <span>Enhancement</span>
+                            <span>Repair</span>
+                            <span>Low-quality data</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-item reveal-item">
+                    <span class="work-index">03</span>
+                    <div class="work-content">
+                        <span class="work-tag">Generation</span>
+                        <h3>Character generation systems</h3>
+                        <p>Studying how generation methods can support character synthesis, repair, and visual understanding.</p>
+                        <div class="work-meta">
+                            <span>Generative models</span>
+                            <span>Synthesis</span>
+                            <span>Visual understanding</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="profile-section profile-band reveal-item" id="notes">
+            <div>
+                <p class="eyebrow">Build log</p>
+                <h2>Research notes, code notes, and small experiments.</h2>
+            </div>
+            <p>
+                This site is becoming a home for things I learn while moving between papers,
+                datasets, code, and product-like prototypes.
+            </p>
+        </section>
+
+        <section class="profile-section">
+            <div class="section-heading">
+                <p class="eyebrow reveal-item">Recent writing</p>
+                <h2 class="line-reveal">Latest notes</h2>
+            </div>
+            <div class="note-list">
+                {% for post in site.posts limit:3 %}
+                <article class="note-item reveal-item">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <h3>{{ post.title }}</h3>
+                        {% if post.subtitle %}
+                        <p>{{ post.subtitle }}</p>
+                        {% else %}
+                        <p>{{ post.content | strip_html | truncate:160 }}</p>
+                        {% endif %}
+                    </a>
+                    <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="profile-section profile-contact-section" id="contact">
+            <p class="eyebrow reveal-item">Contact</p>
+            <h2 class="line-reveal">Open to research conversations, practical systems, and small useful tools.</h2>
+            <div class="contact-actions reveal-item">
+                <button class="profile-button copy-contact" type="button" data-copy="{{ site.email }}">Copy email</button>
+                <button class="profile-button copy-contact" type="button" data-copy="{{ site.wechat_username }}">Copy WeChat</button>
+                <a class="profile-button primary" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+    </div>
 </main>
