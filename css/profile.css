@@ -500,34 +500,17 @@ body {
     text-decoration: none;
 }
 
-.focus-grid {
-    display: grid;
-    gap: 28px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.focus-item,
 .note-item {
     border-top: 1px solid #dbe3ea;
     padding: 22px 0 0;
     transition: border-color 180ms ease, transform 180ms ease;
 }
 
-.focus-item:hover,
 .note-item:hover {
     border-color: #0f766e;
     transform: translateY(-2px);
 }
 
-.focus-kicker {
-    color: #b45309;
-    display: block;
-    font-size: 13px;
-    font-weight: 800;
-    margin-bottom: 14px;
-}
-
-.focus-item h3,
 .note-item h3 {
     color: #111827;
     font-size: 20px;
@@ -535,7 +518,6 @@ body {
     margin: 0 0 10px;
 }
 
-.focus-item p,
 .note-item p {
     color: #4b5563;
     font-size: 15px;
@@ -616,6 +598,24 @@ body {
     font-size: 16px;
     line-height: 1.7;
     margin: 0;
+}
+
+.work-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.work-meta span {
+    background: #f8fafc;
+    border: 1px solid #dbe3ea;
+    border-radius: 999px;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 7px 10px;
 }
 
 .profile-band {
@@ -743,7 +743,6 @@ body {
 
 @media (max-width: 991px) {
     .profile-intro,
-    .focus-grid,
     .profile-band,
     .work-item {
         grid-template-columns: 1fr;
@@ -826,7 +825,6 @@ body {
     .sidebar-container section,
     .intro-profile,
     .profile-button,
-    .focus-item,
     .note-item,
     .profile-band,
     .work-item {
@@ -837,7 +835,6 @@ body {
     .profile-button:hover,
     .profile-button:focus,
     .sidebar-container .short-about img:hover,
-    .focus-item:hover,
     .note-item:hover,
     .work-item:hover {
         transform: none;
