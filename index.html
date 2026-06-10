@@ -27,10 +27,12 @@ hide-sidebar-profile: true
             </div>
         </div>
         <aside class="intro-profile" aria-label="Profile summary">
-            <img src="{{ site.sidebar-avatar }}" alt="Wentao Ruan">
+            <div class="intro-avatar-wrap">
+                <img src="{{ site.sidebar-avatar }}" alt="Wentao Ruan">
+            </div>
             <div class="intro-profile-copy">
                 <h3>Wentao Ruan</h3>
-                <p>IIP-HCI Lab<br>Anhui University</p>
+                <p>IIP-HCI Lab, Anhui University</p>
             </div>
             <div class="intro-profile-links">
                 <a href="mailto:{{ site.email }}">Email</a>
@@ -49,7 +51,7 @@ hide-sidebar-profile: true
         </div>
         <div class="work-list">
             <article class="work-item">
-                <img src="{{ site.baseurl }}/img/post-images/2025-12-21/2025-12-21_background.jpg" alt="Ancient character research preview">
+                <span class="work-index">01</span>
                 <div class="work-content">
                     <span class="work-tag">Ancient characters</span>
                     <h3>Character image understanding</h3>
@@ -57,7 +59,7 @@ hide-sidebar-profile: true
                 </div>
             </article>
             <article class="work-item">
-                <img src="{{ site.baseurl }}/img/background.jpeg" alt="Image restoration preview">
+                <span class="work-index">02</span>
                 <div class="work-content">
                     <span class="work-tag">Restoration</span>
                     <h3>Degraded image repair</h3>
@@ -65,7 +67,7 @@ hide-sidebar-profile: true
                 </div>
             </article>
             <article class="work-item">
-                <img src="{{ site.baseurl }}/img/background_2.jpeg" alt="Generative model preview">
+                <span class="work-index">03</span>
                 <div class="work-content">
                     <span class="work-tag">Generation</span>
                     <h3>Character generation systems</h3>
