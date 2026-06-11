@@ -52,7 +52,8 @@
         root.querySelectorAll(".copy-contact").forEach(function (button) {
             button.addEventListener("click", function () {
                 var value = button.getAttribute("data-copy");
-                var label = button.querySelector("span") ? button.querySelector("span").textContent : button.textContent.replace(/^Copy\s+/i, "");
+                var labelNode = button.querySelector(".contact-label");
+                var label = labelNode ? labelNode.textContent : button.textContent.replace(/^Copy\s+/i, "");
                 label = label.charAt(0).toUpperCase() + label.slice(1);
                 copyText(value).then(function () {
                     markCopied(button, label);
@@ -66,11 +67,13 @@
     function setupLenis() {
         if (noMotion || typeof window.Lenis !== "function") return;
         lenis = new window.Lenis({
-            duration: 1.08,
+            duration: 0.74,
             easing: function (t) {
-                return Math.min(1, 1.001 - Math.pow(2, -10 * t));
+                return 1 - Math.pow(1 - t, 3);
             },
-            smoothWheel: true
+            smoothWheel: true,
+            smoothTouch: false,
+            wheelMultiplier: 0.92
         });
 
         function raf(time) {
@@ -180,7 +183,7 @@
         lines.forEach(function (line, index) {
             var lineSpan = document.createElement("span");
             lineSpan.className = "split-line";
-            lineSpan.style.transitionDelay = Math.min(index * 70, 420) + "ms";
+            lineSpan.style.transitionDelay = Math.min(index * 38, 190) + "ms";
             lineSpan.textContent = line.words.join(" ");
             element.appendChild(lineSpan);
         });
@@ -210,9 +213,8 @@
     function revealInitial() {
         root.querySelectorAll(".reveal-item, .line-reveal").forEach(function (element, index) {
             if (element.getBoundingClientRect().top < window.innerHeight * 0.9) {
-                element.style.transitionDelay = Math.min(index * 55, 420) + "ms";
+                element.style.transitionDelay = Math.min(index * 34, 220) + "ms";
                 element.classList.add("is-revealed");
-                element.classList.remove("is-hiding");
             }
         });
     }
@@ -231,21 +233,16 @@
                 var element = entry.target;
                 if (entry.isIntersecting) {
                     element.classList.add("is-revealed");
-                    element.classList.remove("is-hiding");
-                    return;
-                }
-
-                if (entry.boundingClientRect.top < 0) {
-                    element.classList.add("is-hiding");
+                    observer.unobserve(element);
                 }
             });
         }, {
-            rootMargin: "0px 0px -12% 0px",
-            threshold: 0.16
+            rootMargin: "0px 0px -8% 0px",
+            threshold: 0.1
         });
 
         items.forEach(function (item, index) {
-            item.style.transitionDelay = Math.min(index * 45, 420) + "ms";
+            item.style.transitionDelay = Math.min(index * 22, 160) + "ms";
             observer.observe(item);
         });
 

@@ -1338,19 +1338,17 @@ body {
 .profile-js .reveal-item,
 .profile-js .split-line {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 620ms cubic-bezier(0.22, 1, 0.36, 1), transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+    backface-visibility: hidden;
+    transform: translate3d(0, 14px, 0);
+    transition: opacity 420ms cubic-bezier(0.22, 1, 0.36, 1), transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
 }
 
 .profile-js .reveal-item.is-revealed,
 .profile-js .line-reveal.is-revealed .split-line {
     opacity: 1;
-    transform: translateY(0);
-}
-
-.profile-js .reveal-item.is-hiding {
-    opacity: 0.34;
-    transform: translateY(-16px);
+    transform: translate3d(0, 0, 0);
+    will-change: auto;
 }
 
 .line-reveal .split-line {
@@ -1465,10 +1463,5 @@ body {
         opacity: 1;
         transform: none;
         transition: none;
-    }
-
-    .profile-js .reveal-item.is-hiding {
-        opacity: 1;
-        transform: none;
     }
 }
