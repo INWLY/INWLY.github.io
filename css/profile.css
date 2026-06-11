@@ -971,9 +971,9 @@ body {
 .profile-contact-list {
     border-top: 1px solid var(--soft);
     display: grid;
-    gap: 8px;
-    margin-top: 30px;
-    padding-top: 22px;
+    gap: 4px;
+    margin-top: 28px;
+    padding-top: 18px;
 }
 
 .profile-contact {
@@ -985,10 +985,10 @@ body {
     cursor: pointer;
     display: grid;
     font: inherit;
-    gap: 9px;
-    grid-template-columns: 34px 58px minmax(0, 1fr) 38px;
-    margin-left: -8px;
-    padding: 7px 8px;
+    gap: 8px;
+    grid-template-columns: 30px 56px minmax(0, 1fr) 36px;
+    margin-left: -6px;
+    padding: 5px 6px;
     text-align: left;
     text-decoration: none;
     transition: background 180ms ease, color 180ms ease, transform 180ms ease;
@@ -1008,12 +1008,12 @@ body {
 .profile-contact .contact-mark svg {
     display: block;
     fill: none;
-    height: 18px;
+    height: 16px;
     stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 1.9;
-    width: 18px;
+    width: 16px;
 }
 
 .profile-contact .contact-mark-github svg {
@@ -1438,7 +1438,7 @@ body {
     }
 
     .profile-contact {
-        grid-template-columns: 34px 56px minmax(0, 1fr) 38px;
+        grid-template-columns: 30px 56px minmax(0, 1fr) 36px;
         margin-left: 0;
     }
 
