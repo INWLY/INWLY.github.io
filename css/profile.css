@@ -30,14 +30,18 @@
 }
 
 body {
+    background:
+        radial-gradient(circle at 12% 0%, rgba(191, 226, 247, 0.32), transparent 34%),
+        linear-gradient(180deg, #fbfdff 0%, #ffffff 42%, #f7fbff 100%);
+    color: #213246;
     padding-top: 61px;
 }
 
 .navbar-custom,
 .navbar-custom.is-fixed,
 .navbar-custom.is-visible {
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
+    background: rgba(251, 253, 255, 0.94);
+    border-bottom: 1px solid #d7eaf7;
     box-shadow: none;
     left: 0;
     position: fixed;
@@ -62,7 +66,7 @@ body {
 .navbar-custom.is-fixed .navbar-brand:focus,
 .navbar-custom.is-fixed .nav li a:hover,
 .navbar-custom.is-fixed .nav li a:focus {
-    color: #0f766e;
+    color: #4d9bd3;
 }
 
 .navbar-custom .navbar-toggle .icon-bar {
@@ -71,11 +75,11 @@ body {
 
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-    background: #f8fafc;
+    background: #f3f9ff;
 }
 
 #huxblog_navbar .navbar-collapse {
-    background: #fff;
+    background: #fbfdff;
 }
 
 .navbar-custom {
@@ -93,16 +97,16 @@ body {
 }
 
 .sidebar-container .tags a {
-    background: #f8fafc;
-    border-color: #dbe3ea;
+    background: #f3f9ff;
+    border-color: #d7eaf7;
     color: #334155 !important;
 }
 
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:focus {
-    background: #f0fdfa;
-    border-color: #0f766e;
-    color: #0f766e !important;
+    background: #eaf6ff;
+    border-color: #4d9bd3;
+    color: #2878b7 !important;
 }
 
 .sidebar-container section {
@@ -131,7 +135,7 @@ body {
 
 .compact-page-header,
 .compact-post-header {
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #d7eaf7;
     padding: 52px 0 34px;
 }
 
@@ -166,9 +170,9 @@ body {
 }
 
 .compact-post-tags a {
-    border: 1px solid #cbd5e1;
+    border: 1px solid #c8e3f5;
     border-radius: 999px;
-    color: #0f766e;
+    color: #2878b7;
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
@@ -178,9 +182,9 @@ body {
 
 .compact-post-tags a:hover,
 .compact-post-tags a:focus {
-    background: #f0fdfa;
-    border-color: #0f766e;
-    color: #0f766e;
+    background: #eaf6ff;
+    border-color: #4d9bd3;
+    color: #2878b7;
     text-decoration: none;
 }
 
@@ -277,13 +281,13 @@ body {
 }
 
 .profile-section + .profile-section {
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid #d7eaf7;
 }
 
 .profile-intro {
     align-items: center;
     background-image:
-        linear-gradient(90deg, rgba(15, 118, 110, 0.12), rgba(15, 118, 110, 0)),
+        linear-gradient(90deg, rgba(77, 155, 211, 0.16), rgba(77, 155, 211, 0)),
         linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
     background-position: left bottom, left top;
     background-repeat: no-repeat, repeat;
@@ -297,7 +301,7 @@ body {
 }
 
 .profile-intro:before {
-    background: #0f766e;
+    background: #4d9bd3;
     content: "";
     display: block;
     height: 3px;
@@ -335,8 +339,8 @@ body {
 }
 
 .profile-meta span {
-    background: #f8fafc;
-    border: 1px solid #dbe3ea;
+    background: #f3f9ff;
+    border: 1px solid #d7eaf7;
     border-radius: 999px;
     color: #334155;
     font-size: 13px;
@@ -347,7 +351,7 @@ body {
 
 .intro-profile {
     animation: visualRise 760ms cubic-bezier(0.22, 1, 0.36, 1) 160ms both;
-    border-left: 1px solid #dbe3ea;
+    border-left: 1px solid #d7eaf7;
     justify-self: end;
     padding-left: 40px;
     text-align: left;
@@ -355,7 +359,7 @@ body {
 }
 
 .intro-avatar-wrap {
-    border: 1px solid #dbe3ea;
+    border: 1px solid #d7eaf7;
     border-radius: 50%;
     display: inline-block;
     padding: 8px;
@@ -390,7 +394,7 @@ body {
 }
 
 .intro-profile-links a {
-    color: #0f766e;
+    color: #2878b7;
     font-size: 13px;
     font-weight: 800;
     text-decoration: none;
@@ -398,12 +402,12 @@ body {
 
 .intro-profile-links a:hover,
 .intro-profile-links a:focus {
-    color: #115e59;
+    color: #145f95;
     text-decoration: none;
 }
 
 .eyebrow {
-    color: #0f766e;
+    color: #2878b7;
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.12em;
@@ -420,7 +424,7 @@ body {
 
 .profile-button {
     align-items: center;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #c8e3f5;
     border-radius: 999px;
     color: #0f172a;
     display: inline-flex;
@@ -435,8 +439,8 @@ body {
 
 .profile-button:hover,
 .profile-button:focus {
-    border-color: #0f766e;
-    color: #0f766e;
+    border-color: #4d9bd3;
+    color: #2878b7;
     text-decoration: none;
     transform: translateY(-1px);
 }
@@ -449,8 +453,8 @@ body {
 
 .profile-button.primary:hover,
 .profile-button.primary:focus {
-    background: #0f766e;
-    border-color: #0f766e;
+    background: #4d9bd3;
+    border-color: #4d9bd3;
     color: #fff;
 }
 
@@ -466,7 +470,7 @@ body {
 }
 
 .section-heading .eyebrow:after {
-    background: #f59e0b;
+    background: #9fd2f0;
     content: "";
     display: inline-block;
     height: 2px;
@@ -487,7 +491,7 @@ body {
 }
 
 .section-link {
-    color: #0f766e;
+    color: #2878b7;
     flex: 0 0 auto;
     font-size: 14px;
     font-weight: 800;
@@ -496,18 +500,18 @@ body {
 
 .section-link:hover,
 .section-link:focus {
-    color: #115e59;
+    color: #145f95;
     text-decoration: none;
 }
 
 .note-item {
-    border-top: 1px solid #dbe3ea;
+    border-top: 1px solid #d7eaf7;
     padding: 22px 0 0;
     transition: border-color 180ms ease, transform 180ms ease;
 }
 
 .note-item:hover {
-    border-color: #0f766e;
+    border-color: #4d9bd3;
     transform: translateY(-2px);
 }
 
@@ -526,7 +530,7 @@ body {
 }
 
 .work-list {
-    border-top: 1px solid #dbe3ea;
+    border-top: 1px solid #d7eaf7;
     display: grid;
     margin-top: 32px;
 }
@@ -534,7 +538,7 @@ body {
 .work-item {
     align-items: start;
     animation: profileFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #d7eaf7;
     display: grid;
     gap: 28px;
     grid-template-columns: 76px minmax(0, 1fr);
@@ -555,13 +559,13 @@ body {
 }
 
 .work-item:hover {
-    background: #fbfdfc;
-    border-color: #0f766e;
+    background: #f3f9ff;
+    border-color: #4d9bd3;
     padding-left: 14px;
 }
 
 .work-item:hover .work-index {
-    color: #0f766e;
+    color: #2878b7;
 }
 
 .work-index {
@@ -577,7 +581,7 @@ body {
 }
 
 .work-tag {
-    color: #0f766e;
+    color: #2878b7;
     display: block;
     font-size: 12px;
     font-weight: 800;
@@ -608,8 +612,8 @@ body {
 }
 
 .work-meta span {
-    background: #f8fafc;
-    border: 1px solid #dbe3ea;
+    background: #f3f9ff;
+    border: 1px solid #d7eaf7;
     border-radius: 999px;
     color: #475569;
     font-size: 12px;
@@ -620,8 +624,8 @@ body {
 
 .profile-band {
     align-items: center;
-    background: #fbfdfc;
-    border-left: 4px solid #0f766e;
+    background: #f3f9ff;
+    border-left: 4px solid #4d9bd3;
     display: grid;
     gap: 36px;
     grid-template-columns: minmax(0, 1fr) minmax(260px, 0.82fr);
@@ -661,7 +665,7 @@ body {
 }
 
 .about-page blockquote {
-    border-left-color: #0f766e;
+    border-left-color: #4d9bd3;
     color: #334155;
     font-size: 19px;
     margin-bottom: 28px;
@@ -674,7 +678,7 @@ body {
 }
 
 .about-page a {
-    color: #0f766e;
+    color: #2878b7;
 }
 
 .tags-page {
@@ -683,8 +687,8 @@ body {
 
 .tags-page #tag_cloud {
     align-items: center;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    background: #f3f9ff;
+    border: 1px solid #d7eaf7;
     border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
@@ -695,9 +699,9 @@ body {
 
 .tags-page #tag_cloud a {
     background: #fff;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #c8e3f5;
     border-radius: 999px;
-    color: #0f766e;
+    color: #2878b7;
     font-size: 13px;
     font-weight: 700;
     line-height: 1;
@@ -708,9 +712,9 @@ body {
 
 .tags-page #tag_cloud a:hover,
 .tags-page #tag_cloud a:focus {
-    background: #f0fdfa;
-    border-color: #0f766e;
-    color: #0f766e;
+    background: #eaf6ff;
+    border-color: #4d9bd3;
+    color: #2878b7;
 }
 
 .tags-page .listing-seperator {
@@ -721,7 +725,7 @@ body {
 }
 
 .tags-page .post-preview {
-    border: 1px solid #e5e7eb;
+    border: 1px solid #d7eaf7;
     border-radius: 8px;
     margin-bottom: 12px;
     padding: 18px;
@@ -750,7 +754,7 @@ body {
 
     .intro-profile {
         border-left: 0;
-        border-top: 1px solid #dbe3ea;
+        border-top: 1px solid #d7eaf7;
         justify-self: start;
         max-width: 300px;
         padding-left: 0;
@@ -844,13 +848,13 @@ body {
 /* Motion homepage */
 .profile-shell {
     --ink: #0f172a;
-    --muted: #64748b;
-    --soft: #e5e7eb;
+    --muted: #5f7189;
+    --soft: #d7eaf7;
     --paper: #fff;
-    --wash: #f8fafc;
-    --accent: #0f766e;
-    --accent-strong: #115e59;
-    --gold: #f59e0b;
+    --wash: #f3f9ff;
+    --accent: #4d9bd3;
+    --accent-strong: #2878b7;
+    --gold: #9fd2f0;
     color: var(--ink);
     display: grid;
     font-family: "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
@@ -1122,7 +1126,7 @@ body {
 .profile-shell .profile-meta span,
 .profile-shell .work-meta span {
     background: var(--wash);
-    border: 1px solid #dbe3ea;
+    border: 1px solid #cfe5f4;
     border-radius: 999px;
     color: #475569;
     font-size: 12px;
@@ -1178,7 +1182,7 @@ body {
 }
 
 .profile-shell .work-item:hover {
-    background: linear-gradient(90deg, rgba(15, 118, 110, 0.05), rgba(15, 118, 110, 0));
+    background: linear-gradient(90deg, rgba(77, 155, 211, 0.08), rgba(77, 155, 211, 0));
     border-color: var(--accent);
     padding-left: 14px;
 }
@@ -1224,19 +1228,24 @@ body {
 
 .profile-shell .paper-card {
     animation: none;
-    border-top: 1px solid var(--soft);
-    border-bottom: 1px solid var(--soft);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 251, 255, 0.94)),
+        radial-gradient(circle at 0% 0%, rgba(191, 226, 247, 0.34), transparent 32%);
+    border: 1px solid #cfe5f4;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(67, 132, 184, 0.08);
     display: grid;
     gap: 34px;
     grid-template-columns: 136px minmax(0, 1fr);
     margin-top: 34px;
-    padding: 32px 0;
-    transition: border-color 220ms ease, padding 220ms ease;
+    padding: 30px;
+    transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
 
 .profile-shell .paper-card:hover {
     border-color: var(--accent);
-    padding-left: 14px;
+    box-shadow: 0 22px 55px rgba(67, 132, 184, 0.12);
+    transform: translateY(-2px);
 }
 
 .profile-shell .paper-venue {
@@ -1297,7 +1306,7 @@ body {
 
 .profile-shell .paper-meta span {
     background: var(--wash);
-    border: 1px solid #dbe3ea;
+    border: 1px solid #cfe5f4;
     border-radius: 999px;
     color: #475569;
     font-size: 12px;
@@ -1407,7 +1416,7 @@ body {
 .profile-shell .profile-button {
     align-items: center;
     background: transparent;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #c8e3f5;
     border-radius: 999px;
     color: var(--ink);
     cursor: pointer;
