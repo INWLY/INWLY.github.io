@@ -858,13 +858,13 @@ body {
     color: var(--ink);
     display: grid;
     font-family: "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    gap: 96px;
-    grid-template-columns: 290px minmax(0, 1fr);
+    gap: 76px;
+    grid-template-columns: minmax(220px, 280px) minmax(0, 980px);
     line-height: 1.65;
     margin: 0 auto;
-    max-width: none;
+    max-width: 1420px;
     padding: 68px 34px 40px;
-    width: min(1880px, calc(100vw - 48px));
+    width: auto;
 }
 
 .profile-shell * {
@@ -1235,7 +1235,6 @@ body {
 }
 
 .profile-shell .paper-card {
-    align-items: start;
     animation: none;
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 251, 255, 0.94)),
@@ -1244,11 +1243,11 @@ body {
     border-radius: 18px;
     box-shadow: 0 18px 45px rgba(67, 132, 184, 0.08);
     display: grid;
-    gap: 36px;
-    grid-template-columns: minmax(720px, 1.16fr) minmax(420px, 0.84fr);
+    gap: 22px;
+    grid-template-columns: 1fr;
     margin-top: 34px;
     overflow: hidden;
-    padding: 20px;
+    padding: 20px 20px 24px;
     transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
 
@@ -1259,13 +1258,11 @@ body {
 }
 
 .profile-shell .paper-figure {
-    align-self: start;
     aspect-ratio: 15 / 7;
     background: #fff;
     border: 1px solid #d7eaf7;
     border-radius: 14px;
     display: block;
-    grid-row: 1 / span 2;
     overflow: hidden;
     text-decoration: none;
 }
@@ -1274,8 +1271,16 @@ body {
     box-sizing: border-box;
     display: block;
     height: auto;
-    padding: 10px;
+    padding: 8px;
     width: 100%;
+}
+
+.profile-shell .paper-info {
+    align-items: start;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 160px minmax(0, 1fr);
+    padding: 0 4px;
 }
 
 .profile-shell .paper-venue {
@@ -1289,17 +1294,12 @@ body {
     font-family: "Geist Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     font-size: 11px;
     font-weight: 700;
-    grid-column: 2;
     justify-self: start;
     letter-spacing: 0.02em;
     line-height: 1;
     margin-bottom: 16px;
     padding: 8px 10px;
     text-transform: uppercase;
-}
-
-.profile-shell .paper-body {
-    grid-column: 2;
 }
 
 .profile-shell .paper-venue span,
@@ -1315,8 +1315,8 @@ body {
 
 .profile-shell .paper-body h3 {
     color: var(--ink);
-    font-size: 22px;
-    line-height: 1.24;
+    font-size: 23px;
+    line-height: 1.26;
     margin: 0 0 12px;
 }
 
@@ -1325,7 +1325,7 @@ body {
     font-size: 15px;
     line-height: 1.62;
     margin: 0;
-    max-width: 640px;
+    max-width: 720px;
 }
 
 .profile-shell .paper-authors {
@@ -1345,7 +1345,7 @@ body {
 }
 
 .profile-shell .paper-meta {
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 .profile-shell .paper-meta span {
@@ -1360,7 +1360,7 @@ body {
 }
 
 .profile-shell .paper-actions {
-    margin-top: 18px;
+    margin-top: 16px;
 }
 
 .profile-shell .paper-actions a {
@@ -1526,29 +1526,6 @@ body {
         font-size: 44px;
     }
 
-    .profile-shell .paper-card {
-        grid-template-columns: 1fr;
-    }
-
-    .profile-shell .paper-figure,
-    .profile-shell .paper-venue,
-    .profile-shell .paper-body {
-        grid-column: auto;
-        grid-row: auto;
-    }
-}
-
-@media (max-width: 1600px) {
-    .profile-shell .paper-card {
-        grid-template-columns: 1fr;
-    }
-
-    .profile-shell .paper-figure,
-    .profile-shell .paper-venue,
-    .profile-shell .paper-body {
-        grid-column: auto;
-        grid-row: auto;
-    }
 }
 
 @media (max-width: 860px) {
@@ -1599,11 +1576,8 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .profile-shell .paper-figure,
-    .profile-shell .paper-venue,
-    .profile-shell .paper-body {
-        grid-column: auto;
-        grid-row: auto;
+    .profile-shell .paper-info {
+        grid-template-columns: 1fr;
     }
 
     .profile-shell .split-heading {
