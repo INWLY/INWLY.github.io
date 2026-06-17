@@ -251,6 +251,21 @@ body {
     position: relative;
 }
 
+.profile-main-container {
+    max-width: 1640px;
+    width: calc(100% - 48px);
+}
+
+.profile-main-container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.profile-main-container .postlist-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .profile-page h2,
 .profile-page h3,
 .about-page h2,
@@ -858,11 +873,11 @@ body {
     color: var(--ink);
     display: grid;
     font-family: "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    gap: 76px;
-    grid-template-columns: minmax(220px, 280px) minmax(0, 980px);
+    gap: 84px;
+    grid-template-columns: minmax(220px, 280px) minmax(0, 1120px);
     line-height: 1.65;
     margin: 0 auto;
-    max-width: 1420px;
+    max-width: 1560px;
     padding: 68px 34px 40px;
     width: auto;
 }
@@ -1140,13 +1155,6 @@ body {
     font-size: 34px;
 }
 
-.profile-shell .publication-topic {
-    color: var(--ink);
-    font-size: 27px;
-    line-height: 1.25;
-    max-width: 620px;
-}
-
 .profile-shell .section-heading .eyebrow:after {
     background: var(--gold);
 }
@@ -1234,149 +1242,76 @@ body {
     margin-top: 16px;
 }
 
-.profile-shell .paper-card {
+.profile-shell .publications-section {
+    padding-bottom: 56px;
+}
+
+.profile-shell .publications-heading h2 {
+    color: var(--ink);
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 30px;
+}
+
+.profile-shell .publication-item {
+    align-items: start;
     animation: none;
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 251, 255, 0.94)),
-        radial-gradient(circle at 0% 0%, rgba(191, 226, 247, 0.34), transparent 32%);
-    border: 1px solid #cfe5f4;
-    border-radius: 18px;
-    box-shadow: 0 18px 45px rgba(67, 132, 184, 0.08);
     display: grid;
-    gap: 22px;
-    grid-template-columns: 1fr;
-    margin-top: 34px;
-    overflow: hidden;
-    padding: 20px 20px 24px;
-    transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+    gap: 28px;
+    grid-template-columns: 280px minmax(0, 1fr);
+    padding: 0;
 }
 
-.profile-shell .paper-card:hover {
-    border-color: var(--accent);
-    box-shadow: 0 22px 55px rgba(67, 132, 184, 0.12);
-    transform: translateY(-2px);
-}
-
-.profile-shell .paper-figure {
+.profile-shell .publication-thumb {
     aspect-ratio: 15 / 7;
-    background: #fff;
-    border: 1px solid #d7eaf7;
-    border-radius: 14px;
     display: block;
     overflow: hidden;
     text-decoration: none;
 }
 
-.profile-shell .paper-figure img {
-    box-sizing: border-box;
+.profile-shell .publication-thumb img {
     display: block;
-    height: auto;
-    padding: 8px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     width: 100%;
 }
 
-.profile-shell .paper-info {
-    align-items: start;
-    display: grid;
-    gap: 22px;
-    grid-template-columns: 160px minmax(0, 1fr);
-    padding: 0 4px;
-}
-
-.profile-shell .paper-venue {
-    align-items: center;
-    background: #eaf6ff;
-    border: 1px solid #cfe5f4;
-    border-radius: 999px;
-    color: var(--accent);
-    display: inline-flex;
-    gap: 8px;
-    font-family: "Geist Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    font-size: 11px;
-    font-weight: 700;
-    justify-self: start;
-    letter-spacing: 0.02em;
-    line-height: 1;
-    margin-bottom: 16px;
-    padding: 8px 10px;
-    text-transform: uppercase;
-}
-
-.profile-shell .paper-venue span,
-.profile-shell .paper-venue strong {
-    display: inline;
-}
-
-.profile-shell .paper-venue strong {
-    color: var(--accent-strong);
-    font-weight: 800;
-    margin-top: 0;
-}
-
-.profile-shell .paper-body h3 {
-    color: var(--ink);
-    font-size: 23px;
-    line-height: 1.26;
-    margin: 0 0 12px;
-}
-
-.profile-shell .paper-body p {
-    color: #475569;
-    font-size: 15px;
-    line-height: 1.62;
-    margin: 0;
-    max-width: 720px;
-}
-
-.profile-shell .paper-authors {
+.profile-shell .publication-status {
     color: var(--muted);
-    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 0 3px;
 }
 
-.profile-shell .paper-authors strong {
+.profile-shell .publication-copy h3 {
+    color: var(--ink);
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 3px;
+}
+
+.profile-shell .publication-authors,
+.profile-shell .publication-links {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.profile-shell .publication-authors strong {
     color: var(--ink);
 }
 
-.profile-shell .paper-meta,
-.profile-shell .paper-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.profile-shell .paper-meta {
-    margin-top: 14px;
-}
-
-.profile-shell .paper-meta span {
-    background: var(--wash);
-    border: 1px solid #cfe5f4;
-    border-radius: 999px;
-    color: #475569;
-    font-size: 11px;
-    font-weight: 700;
-    line-height: 1;
-    padding: 7px 10px;
-}
-
-.profile-shell .paper-actions {
-    margin-top: 16px;
-}
-
-.profile-shell .paper-actions a {
-    border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+.profile-shell .publication-links a {
     color: var(--accent);
-    font-family: "Geist Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    font-size: 12px;
-    font-weight: 800;
-    padding-bottom: 3px;
+    font-weight: 700;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
-.profile-shell .paper-actions a:hover,
-.profile-shell .paper-actions a:focus {
-    border-color: var(--accent-strong);
+.profile-shell .publication-links a:hover,
+.profile-shell .publication-links a:focus {
     color: var(--accent-strong);
     text-decoration: none;
 }
@@ -1571,13 +1506,17 @@ body {
     }
 
     .profile-shell .profile-band,
-    .profile-shell .paper-card,
     .profile-shell .work-item {
         grid-template-columns: 1fr;
     }
 
-    .profile-shell .paper-info {
+    .profile-shell .publication-item {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .profile-shell .publication-thumb {
+        max-width: 320px;
     }
 
     .profile-shell .split-heading {
@@ -1613,7 +1552,6 @@ body {
     }
 
     .profile-shell .work-item:hover,
-    .profile-shell .paper-card:hover,
     .profile-shell .note-item:hover {
         padding-left: 0;
     }
