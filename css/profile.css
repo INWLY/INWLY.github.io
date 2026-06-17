@@ -1296,6 +1296,10 @@ body {
     margin: 0 0 10px;
 }
 
+.profile-shell .publication-copy {
+    padding-top: 29px;
+}
+
 .profile-shell .publication-copy h3 {
     color: var(--ink);
     font-size: 16px;
@@ -1531,6 +1535,10 @@ body {
     .profile-shell .publication-item {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+
+    .profile-shell .publication-copy {
+        padding-top: 0;
     }
 
     .profile-shell .publication-thumb {
