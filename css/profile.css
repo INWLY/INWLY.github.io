@@ -1265,7 +1265,7 @@ body {
     animation: none;
     display: grid;
     gap: 28px;
-    grid-template-columns: 280px minmax(0, 1fr);
+    grid-template-columns: 360px minmax(0, 1fr);
     padding: 0;
 }
 
@@ -1300,11 +1300,17 @@ body {
 }
 
 .profile-shell .publication-authors,
+.profile-shell .publication-desc,
 .profile-shell .publication-links {
     color: var(--muted);
     font-size: 15px;
     line-height: 1.45;
     margin: 0;
+}
+
+.profile-shell .publication-desc {
+    margin-top: 8px;
+    max-width: 680px;
 }
 
 .profile-shell .publication-authors strong {
