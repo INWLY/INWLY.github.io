@@ -1289,15 +1289,16 @@ body {
 }
 
 .profile-shell .publication-status {
-    color: var(--muted);
-    font-size: 14px;
+    color: var(--accent-strong);
+    font-size: 16px;
+    font-weight: 800;
     line-height: 1.2;
-    margin: 0 0 8px;
+    margin: 0 0 10px;
 }
 
 .profile-shell .publication-copy h3 {
     color: var(--ink);
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 1.25;
     margin: 0 0 3px;
