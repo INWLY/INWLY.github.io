@@ -252,7 +252,7 @@ body {
 }
 
 .profile-main-container {
-    max-width: 1400px;
+    max-width: 1360px;
     width: calc(100% - 64px);
 }
 
@@ -873,11 +873,11 @@ body {
     color: var(--ink);
     display: grid;
     font-family: "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    gap: 64px;
-    grid-template-columns: minmax(220px, 250px) minmax(0, 900px);
+    gap: 58px;
+    grid-template-columns: minmax(260px, 300px) minmax(0, 840px);
     line-height: 1.65;
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1260px;
     padding: 68px 34px 40px;
     width: auto;
 }
@@ -1012,8 +1012,8 @@ body {
     cursor: pointer;
     display: grid;
     font: inherit;
-    gap: 8px;
-    grid-template-columns: 30px 56px minmax(0, 1fr) 36px;
+    gap: 6px;
+    grid-template-columns: 30px 54px minmax(0, 1fr) 34px;
     margin-left: -6px;
     padding: 5px 6px;
     text-align: left;
@@ -1083,7 +1083,7 @@ body {
 .profile-contact:hover strong,
 .profile-contact:focus strong,
 .profile-contact.is-copied strong {
-    max-width: 190px;
+    max-width: 220px;
     opacity: 1;
     transform: translateX(0);
 }
@@ -1459,7 +1459,7 @@ body {
 @media (max-width: 1100px) {
     .profile-shell {
         gap: 54px;
-        grid-template-columns: minmax(200px, 250px) minmax(0, 1fr);
+        grid-template-columns: minmax(230px, 280px) minmax(0, 1fr);
         padding-left: 28px;
         padding-right: 28px;
     }
