@@ -1301,10 +1301,10 @@ body {
 }
 
 .profile-shell .publication-copy h3 {
-    color: var(--ink);
+    color: #1f3854;
     font-size: 16px;
-    font-weight: 800;
-    line-height: 1.25;
+    font-weight: 700;
+    line-height: 1.32;
     margin: 0 0 3px;
 }
 
@@ -1323,7 +1323,8 @@ body {
 }
 
 .profile-shell .publication-authors strong {
-    color: var(--ink);
+    color: var(--accent-strong);
+    font-weight: 700;
 }
 
 .profile-shell .publication-links a {
