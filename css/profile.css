@@ -1269,6 +1269,10 @@ body {
     padding: 0;
 }
 
+.profile-shell .publication-visual {
+    min-width: 0;
+}
+
 .profile-shell .publication-thumb {
     aspect-ratio: 15 / 7;
     display: block;
@@ -1288,12 +1292,12 @@ body {
     color: var(--muted);
     font-size: 14px;
     line-height: 1.2;
-    margin: 0 0 3px;
+    margin: 0 0 8px;
 }
 
 .profile-shell .publication-copy h3 {
     color: var(--ink);
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 800;
     line-height: 1.25;
     margin: 0 0 3px;
