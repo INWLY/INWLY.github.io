@@ -252,8 +252,8 @@ body {
 }
 
 .profile-main-container {
-    max-width: 1640px;
-    width: calc(100% - 48px);
+    max-width: 1480px;
+    width: calc(100% - 56px);
 }
 
 .profile-main-container .row {
@@ -873,11 +873,11 @@ body {
     color: var(--ink);
     display: grid;
     font-family: "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    gap: 84px;
-    grid-template-columns: minmax(220px, 280px) minmax(0, 1120px);
+    gap: 72px;
+    grid-template-columns: minmax(220px, 260px) minmax(0, 980px);
     line-height: 1.65;
     margin: 0 auto;
-    max-width: 1560px;
+    max-width: 1400px;
     padding: 68px 34px 40px;
     width: auto;
 }
@@ -953,6 +953,13 @@ body {
     font-size: 18px;
     font-weight: 700;
     margin: 0 0 6px;
+}
+
+.profile-identity .profile-cn-name {
+    color: var(--accent-strong);
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 7px;
 }
 
 .profile-identity span {
