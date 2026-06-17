@@ -1325,6 +1325,10 @@ body {
 .profile-shell .publication-authors strong {
     color: var(--accent-strong);
     font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
 
 .profile-shell .publication-links a {
