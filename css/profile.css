@@ -1012,8 +1012,8 @@ body {
     cursor: pointer;
     display: grid;
     font: inherit;
-    gap: 6px;
-    grid-template-columns: 30px 54px minmax(0, 1fr) 34px;
+    gap: 5px;
+    grid-template-columns: 30px 44px minmax(0, 1fr) 32px;
     margin-left: -6px;
     padding: 5px 6px;
     text-align: left;
@@ -1083,7 +1083,7 @@ body {
 .profile-contact:hover strong,
 .profile-contact:focus strong,
 .profile-contact.is-copied strong {
-    max-width: 220px;
+    max-width: 235px;
     opacity: 1;
     transform: translateX(0);
 }
