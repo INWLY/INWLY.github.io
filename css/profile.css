@@ -252,7 +252,7 @@ body {
 }
 
 .profile-main-container {
-    max-width: 1360px;
+    max-width: 1400px;
     width: calc(100% - 64px);
 }
 
@@ -873,11 +873,11 @@ body {
     color: var(--ink);
     display: grid;
     font-family: "Geist", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    gap: 58px;
-    grid-template-columns: minmax(260px, 300px) minmax(0, 840px);
+    gap: 64px;
+    grid-template-columns: minmax(220px, 250px) minmax(0, 900px);
     line-height: 1.65;
     margin: 0 auto;
-    max-width: 1260px;
+    max-width: 1300px;
     padding: 68px 34px 40px;
     width: auto;
 }
@@ -1459,7 +1459,7 @@ body {
 @media (max-width: 1100px) {
     .profile-shell {
         gap: 54px;
-        grid-template-columns: minmax(230px, 280px) minmax(0, 1fr);
+        grid-template-columns: minmax(200px, 250px) minmax(0, 1fr);
         padding-left: 28px;
         padding-right: 28px;
     }
