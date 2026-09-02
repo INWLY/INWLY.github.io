@@ -13,7 +13,7 @@ github_repo: "https://github.com/INWLY" # you code repository
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Research, build, write, repeat."
 sidebar-avatar: https://github.com/INWLY.png?size=160      # use GitHub avatar so profile image stays in sync
-avatar-icon: https://github.com/INWLY.png?size=192         # use avatar as the browser tab icon
+avatar-icon: https://github.com/INWLY.png?size=192&v=20260902  # use avatar as the browser tab icon
 
 
 
@@ -88,7 +88,7 @@ ga_domain: auto               # 默认的是 auto, 这里我是自定义了的�
 
 
 # Featured Tags
-featured-tags: true                     # 是否使用首页标签
+featured-tags: false                    # 是否使用首页标签
 featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 

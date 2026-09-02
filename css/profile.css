@@ -237,8 +237,7 @@ body {
 }
 
 .profile-page,
-.about-page,
-.tags-page {
+.blog-page {
     color: #1f2937;
     font-size: 17px;
     line-height: 1.75;
@@ -268,10 +267,29 @@ body {
 
 .profile-page h2,
 .profile-page h3,
-.about-page h2,
-.tags-page h2,
-.tags-page h3 {
+.blog-page h1,
+.blog-page h3 {
     letter-spacing: 0;
+}
+
+.blog-page {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 52px 0 36px;
+}
+
+.blog-page .section-heading {
+    border-bottom: 1px solid #d7eaf7;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+}
+
+.blog-page h1 {
+    color: #0f172a;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
 }
 
 .profile-section {
