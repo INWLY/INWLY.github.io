@@ -3,7 +3,7 @@ title: INWLY
 SEOTitle: INWLY | Wentao Ruan
 header-img: img/background_2.jpeg
 email: INWLY@qq.com
-description: "Wentao Ruan (阮文涛 / INWLY), a Ph.D. student at the IIP-HCI Lab, Anhui University, focusing on brain-computer interfaces, EEG signal processing, and prior work in ancient Chinese character image restoration."
+description: "Wentao Ruan (阮文涛 / INWLY), a Ph.D. student at the IIP-HCI Lab, Anhui University, focusing on brain-computer interfaces, EEG signal processing, text-space decoding, and earlier work in ancient Chinese character image restoration."
 keyword: "Wentao Ruan, 阮文涛, INWLY, IIP-HCI, Anhui University, AHU, brain-computer interface, BCI, EEG signal processing, ancient Chinese character image restoration"
 url: "https://INWLY.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,7 +11,7 @@ github_repo: "https://github.com/INWLY" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Research, build, write, repeat."
+sidebar-about-description: "BCI, EEG, and earlier character restoration research."
 sidebar-avatar: https://github.com/INWLY.png?size=160      # use GitHub avatar so profile image stays in sync
 avatar-icon: https://github.com/INWLY.png?size=192&v=20260902  # use avatar as the browser tab icon
 
