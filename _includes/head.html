@@ -13,11 +13,12 @@
     <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/img/favicon.svg">
+    <link rel="icon" type="image/png" href="{{ site.avatar-icon | default: site.sidebar-avatar }}">
+    <link rel="alternate icon" type="image/svg+xml" href="{{ site.baseurl }}/img/favicon.svg">
     <link rel="alternate icon" type="image/png" href="{{ site.baseurl }}/img/favicon.ico">
 
     <!-- Safari Webpage Icon    by-BY -->
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="{{ site.avatar-icon | default: site.sidebar-avatar }}">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -34,7 +35,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/profile.css?v=20260617-20" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/profile.css?v=20260902-1" | prepend: site.baseurl }}">
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">

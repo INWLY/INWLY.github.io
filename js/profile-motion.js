@@ -5,7 +5,9 @@
     if (!root) return;
 
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var isWindows = /Windows|Win32|Win64/i.test(navigator.userAgent + " " + navigator.platform);
     var noMotion = reduceMotion || /(?:\?|&)noanim\b/.test(window.location.search);
+    var noSmoothScroll = noMotion || isWindows;
     var status = root.querySelector(".profile-copy-status");
     var lenis = null;
 
@@ -65,7 +67,7 @@
     }
 
     function setupLenis() {
-        if (noMotion || typeof window.Lenis !== "function") return;
+        if (noSmoothScroll || typeof window.Lenis !== "function") return;
         lenis = new window.Lenis({
             duration: 0.74,
             easing: function (t) {
@@ -119,7 +121,7 @@
                 if (lenis) {
                     lenis.scrollTo(target, { offset: -84 });
                 } else {
-                    target.scrollIntoView({ behavior: noMotion ? "auto" : "smooth", block: "start" });
+                    target.scrollIntoView({ behavior: noSmoothScroll ? "auto" : "smooth", block: "start" });
                 }
                 setActive(links.indexOf(link));
             });

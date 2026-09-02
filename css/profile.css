@@ -31,8 +31,8 @@
 
 body {
     background:
-        radial-gradient(circle at 12% 0%, rgba(191, 226, 247, 0.32), transparent 34%),
-        linear-gradient(180deg, #fbfdff 0%, #ffffff 42%, #f7fbff 100%);
+        radial-gradient(circle at 12% 0%, rgba(220, 239, 251, 0.2), transparent 36%),
+        linear-gradient(180deg, #fdfefe 0%, #ffffff 46%, #fbfdff 100%);
     color: #213246;
     padding-top: 61px;
 }
@@ -40,7 +40,7 @@ body {
 .navbar-custom,
 .navbar-custom.is-fixed,
 .navbar-custom.is-visible {
-    background: rgba(251, 253, 255, 0.94);
+    background: rgba(255, 255, 255, 0.96);
     border-bottom: 1px solid #d7eaf7;
     box-shadow: none;
     left: 0;
@@ -79,7 +79,7 @@ body {
 }
 
 #huxblog_navbar .navbar-collapse {
-    background: #fbfdff;
+    background: #fff;
 }
 
 .navbar-custom {
