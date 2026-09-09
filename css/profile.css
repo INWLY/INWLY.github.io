@@ -1282,8 +1282,8 @@ body {
     align-items: start;
     animation: none;
     display: grid;
-    gap: 34px;
-    grid-template-columns: 390px minmax(0, 1fr);
+    gap: 26px;
+    grid-template-columns: 360px minmax(0, 1fr);
     padding: 0;
 }
 
@@ -1304,7 +1304,7 @@ body {
 .profile-shell .publication-thumb {
     align-items: center;
     display: flex;
-    height: 230px;
+    height: 218px;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
@@ -1325,7 +1325,7 @@ body {
 
 .profile-shell .publication-venue {
     color: var(--accent-strong);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 800;
     letter-spacing: 0;
     line-height: 1.2;
@@ -1334,7 +1334,7 @@ body {
 }
 
 .profile-shell .publication-copy {
-    padding-top: 31px;
+    padding-top: 33px;
 }
 
 .profile-shell .publication-copy h3 {
@@ -1580,12 +1580,12 @@ body {
     }
 
     .profile-shell .publication-visual {
-        max-width: 390px;
+        max-width: 360px;
         width: 100%;
     }
 
     .profile-shell .publication-thumb {
-        height: clamp(180px, 56vw, 230px);
+        height: clamp(180px, 56vw, 218px);
     }
 
     .profile-shell .publication-copy {
