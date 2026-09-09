@@ -1312,11 +1312,6 @@ body {
     width: 100%;
 }
 
-.profile-shell .publication-thumb-cover img {
-    object-fit: cover;
-    object-position: center;
-}
-
 .profile-shell .publication-status {
     color: var(--accent-strong);
     font-size: 16px;
