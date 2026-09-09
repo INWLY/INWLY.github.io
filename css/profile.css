@@ -1282,8 +1282,13 @@ body {
     align-items: start;
     animation: none;
     display: grid;
-    gap: 26px;
+    column-gap: 26px;
     grid-template-columns: 360px minmax(0, 1fr);
+    grid-template-rows: auto 218px;
+    grid-template-areas:
+        "venue copy"
+        "media copy";
+    row-gap: 12px;
     padding: 0;
 }
 
@@ -1294,16 +1299,13 @@ body {
 }
 
 .profile-shell .publication-visual {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 0;
+    display: contents;
 }
 
 .profile-shell .publication-thumb {
     align-items: center;
     display: flex;
+    grid-area: media;
     height: 218px;
     justify-content: center;
     max-height: 100%;
@@ -1327,14 +1329,16 @@ body {
     color: var(--accent-strong);
     font-size: 18px;
     font-weight: 800;
+    grid-area: venue;
     letter-spacing: 0;
     line-height: 1.2;
-    margin: 0 0 12px;
+    margin: 0;
     width: 100%;
 }
 
 .profile-shell .publication-copy {
     align-self: center;
+    grid-area: copy;
     padding-top: 0;
 }
 
@@ -1576,11 +1580,16 @@ body {
     }
 
     .profile-shell .publication-item {
+        grid-template-areas:
+            "venue"
+            "media"
+            "copy";
+        grid-template-rows: auto auto auto;
         grid-template-columns: 1fr;
-        gap: 16px;
+        row-gap: 10px;
     }
 
-    .profile-shell .publication-visual {
+    .profile-shell .publication-thumb {
         max-width: 360px;
         width: 100%;
     }
