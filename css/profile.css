@@ -1282,7 +1282,7 @@ body {
     align-items: start;
     animation: none;
     display: grid;
-    gap: 32px;
+    gap: 34px;
     grid-template-columns: 390px minmax(0, 1fr);
     padding: 0;
 }
@@ -1293,25 +1293,22 @@ body {
     padding-top: 34px;
 }
 
-.profile-shell .publication-media {
+.profile-shell .publication-visual {
     align-items: center;
-    aspect-ratio: 39 / 23;
-    background: #fff;
-    border: 1px solid #d7eaf7;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     min-width: 0;
-    overflow: hidden;
-    padding: 14px;
 }
 
 .profile-shell .publication-thumb {
     align-items: center;
     display: flex;
-    height: 100%;
+    height: 230px;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
+    overflow: hidden;
     text-decoration: none;
     width: 100%;
 }
@@ -1328,15 +1325,16 @@ body {
 
 .profile-shell .publication-venue {
     color: var(--accent-strong);
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 0;
-    line-height: 1.25;
-    margin: 0 0 8px;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    width: 100%;
 }
 
 .profile-shell .publication-copy {
-    padding-top: 2px;
+    padding-top: 31px;
 }
 
 .profile-shell .publication-copy h3 {
@@ -1581,9 +1579,13 @@ body {
         gap: 16px;
     }
 
-    .profile-shell .publication-media {
+    .profile-shell .publication-visual {
         max-width: 390px;
         width: 100%;
+    }
+
+    .profile-shell .publication-thumb {
+        height: clamp(180px, 56vw, 230px);
     }
 
     .profile-shell .publication-copy {
