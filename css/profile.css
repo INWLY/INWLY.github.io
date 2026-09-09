@@ -1287,6 +1287,12 @@ body {
     padding: 0;
 }
 
+.profile-shell .publication-item + .publication-item {
+    border-top: 1px solid #d7eaf7;
+    margin-top: 34px;
+    padding-top: 34px;
+}
+
 .profile-shell .publication-visual {
     min-width: 0;
 }
