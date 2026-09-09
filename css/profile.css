@@ -1334,7 +1334,8 @@ body {
 }
 
 .profile-shell .publication-copy {
-    padding-top: 33px;
+    align-self: center;
+    padding-top: 0;
 }
 
 .profile-shell .publication-copy h3 {
